@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative; 
+}
+
+.inner_block {
+    width: 90%;
+    height: 80vh;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.heading {
+    margin: 0;
+    color: rgb(187, 185, 185);
+    background-color: rgb(83, 82, 82);
+}
+
+.outside_table {
+    position: relative; 
+    overflow: auto; 
+    max-height: calc(100% - 80px); /* Adjust height for better visibility */
+}
+
+.table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 0.8%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.firstrow {
+    color: aliceblue;
+    background-color: black;
+}
+
+.ruler-horizontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.3) 10px,
+        rgba(0, 0, 0, 0.3) 11px
+    );
+    border-bottom: 1px solid black;
+    display: none; /* Show when needed */
+    pointer-events: none;
+}
+
+.ruler-vertical {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.3) 10px,
+        rgba(0, 0, 0, 0.3) 11px
+    );
+    border-right: 1px solid black;
+    display: none; /* Show when needed */
+    pointer-events: none;
+}
+
+.button_transfer_money {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1%;
+    margin-right: 5%;
+}
+
+.button_transfer_money button {
+    height: 5vh;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(194, 251, 215);
+    color: rgb(0, 128, 0);
+    border-radius: 20px;
+}
+
+.back {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    margin-bottom: 1%;
+    margin-left: 0%;
+}
+
+.back button {
+    cursor: pointer;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(194, 251, 215);
+    color: rgb(0, 128, 0);
+    border-radius: 20px;
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: rgb(2, 97, 2);
+}
+
+button:active {
+    color: aliceblue;
+    background-color: rgb(2, 97, 2);
+}

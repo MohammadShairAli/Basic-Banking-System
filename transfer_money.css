@@ -1,0 +1,106 @@
+body{
+    background-image: url("transferring.jpeg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60vw 130vh;
+}
+
+.box{
+    height: 85vh;
+    width: 30vw;
+    background-color: aliceblue;
+    float: left;
+    margin-top: 7vh;
+    margin-left: 4%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px;
+    
+    
+}
+
+.box h2 {
+    align-items: center;
+
+    text-align: center;
+    background-color: beige;
+    
+}
+
+.box p{
+    margin: 0;
+    margin-left: 0.5vw;
+    font-weight: bold;
+}
+
+.box input{
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+    display: flex;    
+    height: 5%;
+    width: 80%;
+}
+
+.box select{
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+    display: flex;    
+    height: 6.5%;
+    width: 82%;   
+}
+
+.box button{
+    cursor: pointer;
+    font-weight: bold;
+    height: 5vh;
+    width: 11vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: darkgray; 
+    box-shadow: 2px 2px 2px;
+}
+
+.button1{
+    float: right;
+    margin-top: -1vh;
+    margin-right: 3.5vw;
+    cursor: pointer;
+}
+
+.button1 input{
+    cursor: pointer;
+    font-size: large;
+    height: 5vh;
+    width: 11vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+input:hover {
+    color: aliceblue;
+    background-color: darkgray; 
+    box-shadow: 2px 2px 2px;
+}
+
+.button2{
+    
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 10vh;
+}
+.button3 {
+    
+    position: relative;
+    float: right;
+    margin-right: -14vw;
+    margin-top: 10vh;
+
+}
+.button3 button{
+    width: 13vw;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transfer_money.css">
+</head>
+<body>
+    <form action="transfer_history2.php" method="POST">
+        <div class="box">
+
+            <h2>FILL BLANKS CAREFULLY</h2>
+
+            <p>FULL NAME :</p>
+            <input type="text" name="full_name" placeholder="e.g. ABC" required>
+            
+            <p>E-MAIL :</p>
+            <input type="email" name="email" placeholder="e.g. ABC@GMAIL.COM" required>
+            
+            <p>PHONE NUMBER :</p>
+            <input type="text" name="phone_number" placeholder="e.g. 0300000000" required>
+            
+            <p>AMOUNT :</p>
+            <input type="text" name="amount" placeholder="e.g. 10000" required>
+            
+            <p>PAYMENT METHOD :</p>
+            <select name="payment_method" required>
+                <option value="Paypal">Paypal</option>
+                <option value="Credit Card">Credit Card</option>
+            </select>
+            
+            <div class="button1">
+                <input type="submit" name="submit" onclick="showAlert()">
+            </div>
+
+            <div class="button2">
+                <button onclick="location.href='all_customer.php'" type="button">BACK</button>
+            </div>
+
+            <div class="button3">
+                <button onclick="location.href='transfer_history2.php'" type="button">TRANSFER HISTORY</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function showAlert() {
+            alert("Congratulations, Your transaction is completed successfully");
+        }
+    </script>
+</body>
+</html>
